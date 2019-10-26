@@ -7,7 +7,5 @@ def insertion_sort(intlist: List[int]):
         i = j - 1
         while i >= 0 and intlist[i] > key:
             intlist[i + 1] = intlist[i]
-            # print("el: ", intlist[i])
-            # print("el + 1: ", intlist[i + 1])
             i = i - 1
         intlist[i + 1] = key
