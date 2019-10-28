@@ -15,7 +15,7 @@ class Stack:
         self._top += 1
 
     def pop(self):
-        if self._top == 0:
+        if self.is_empty():
             raise StackUnderflowError
         self._top -= 1
         el = self._stack[self._top]

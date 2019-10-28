@@ -4,3 +4,11 @@ class StackUnderflowError(Exception):
 
 class StackOverflowError(Exception):
     pass
+
+
+class QueueOverflowError(Exception):
+    pass
+
+
+class QueueUnderflowError(Exception):
+    pass
