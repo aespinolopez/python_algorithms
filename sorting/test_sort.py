@@ -22,3 +22,15 @@ def test_selection_sort():
 
     for i in range(len(expected_output)):
         assert sorted_list[i] == expected_output[i]
+
+
+def test_quick_sort():
+    sorted_list = sort.quick_sort(to_sort)
+    for i in range(len(expected_output)):
+        assert sorted_list[i] == expected_output[i]
+
+
+def test_quick_sort_in_place():
+    sorted_list = sort.quick_sort_in_place(to_sort, 0, len(to_sort))
+    for i in range(len(expected_output)):
+        assert sorted_list[i] == expected_output[i]
